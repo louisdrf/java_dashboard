@@ -1,0 +1,140 @@
+Rapport généré le : 2023/04/13 10:29:06
+
+Liste des clients :
+
+Client 1 : loanpena77@gmail.com / Entreprise : Bandit Corp
+Client 2 : louis.driffort@gmail.com / Entreprise : Microsoft
+
+Nombre de clients : 2
+
+
+Entreprise prestataire 1 : Golf Corp
+Activités proposées :
+- Golf (Prix : 50, Places : 4) réservée le : null
+Liste des clients inscrits : 
+Clients inscrits à l'activité : 0
+Montant actuel estimé de la prestation : 0€
+
+
+Entreprise prestataire 2 : Branch Corp
+Activités proposées :
+- Accrobranche Park (Prix : 15, Places : 8) réservée le : null
+Liste des clients inscrits : 
+Clients inscrits à l'activité : 0
+Montant actuel estimé de la prestation : 0€
+
+
+Entreprise prestataire 3 : Paintball Corp
+Activités proposées :
+- Paintball (Prix : 30, Places : 12) réservée le : 2023-04-11
+Liste des clients inscrits : 
+- test1@test.fr
+- test3@test.fr
+- lpena@myges.fr
+- louis@drf.fr
+- test2@test.fr
+Clients inscrits à l'activité : 5
+Montant actuel estimé de la prestation : 150€
+
+
+Entreprise prestataire 4 : Boowling Corp
+Activités proposées :
+- Boowling (Prix : 11, Places : 6) réservée le : null
+Liste des clients inscrits : 
+Clients inscrits à l'activité : 0
+Montant actuel estimé de la prestation : 0€
+
+
+Entreprise prestataire 5 : Escape game Corp
+Activités proposées :
+- Victory Escape Game (Prix : 40, Places : 10) réservée le : null
+Liste des clients inscrits : 
+Clients inscrits à l'activité : 0
+Montant actuel estimé de la prestation : 0€
+
+
+Entreprise prestataire 6 : Kart Corp
+Activités proposées :
+- Karting SpeedPark (Prix : 22, Places : 10) réservée le : 2023-04-13
+Liste des clients inscrits : 
+- tamere@gmail.com
+- tonpere@orange.fr
+Clients inscrits à l'activité : 2
+Montant actuel estimé de la prestation : 44€
+
+Nombre d'entreprise prestataires : 6
+
+----------------------------------------------------------------------------------
+
+
+
+Rapport généré le : 2023/04/13 10:29:54
+
+Liste des clients :
+
+Client 1 : loanpena77@gmail.com / Entreprise : Bandit Corp
+Client 2 : louis.driffort@gmail.com / Entreprise : Microsoft
+
+Nombre de clients : 2
+
+
+Entreprise prestataire 1 : Golf Corp
+Activités proposées :
+- Golf (Prix : 50, Places : 4) réservée le : null
+Liste des clients inscrits : 
+Clients inscrits à l'activité : 0
+Montant actuel estimé de la prestation : 0€
+
+
+Entreprise prestataire 2 : Branch Corp
+Activités proposées :
+- Accrobranche Park (Prix : 15, Places : 8) réservée le : null
+Liste des clients inscrits : 
+Clients inscrits à l'activité : 0
+Montant actuel estimé de la prestation : 0€
+
+
+Entreprise prestataire 3 : Paintball Corp
+Activités proposées :
+- Paintball (Prix : 30, Places : 12) réservée le : 2023-04-11
+Liste des clients inscrits : 
+- test1@test.fr
+- test3@test.fr
+- lpena@myges.fr
+- louis@drf.fr
+- test2@test.fr
+Clients inscrits à l'activité : 5
+Montant actuel estimé de la prestation : 150€
+
+
+Entreprise prestataire 4 : Boowling Corp
+Activités proposées :
+- Boowling (Prix : 11, Places : 6) réservée le : null
+Liste des clients inscrits : 
+Clients inscrits à l'activité : 0
+Montant actuel estimé de la prestation : 0€
+
+
+Entreprise prestataire 5 : Escape game Corp
+Activités proposées :
+- Victory Escape Game (Prix : 40, Places : 10) réservée le : null
+Liste des clients inscrits : 
+Clients inscrits à l'activité : 0
+Montant actuel estimé de la prestation : 0€
+
+
+Entreprise prestataire 6 : Kart Corp
+Activités proposées :
+- Karting SpeedPark (Prix : 22, Places : 10) réservée le : 2023-04-13
+Liste des clients inscrits : 
+- tamere@gmail.com
+- tonpere@orange.fr
+Clients inscrits à l'activité : 2
+Montant actuel estimé de la prestation : 44€
+
+Nombre d'entreprise prestataires : 6
+
+----------------------------------------------------------------------------------
+
+
+
