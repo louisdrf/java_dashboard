@@ -7,11 +7,20 @@ class PrestaCompany {
 
     private String name;
     private int montantPresta;
+    private int spentAmount;
     private int id;
     private String mail;
     private List<Activity> prestaActivityList = new ArrayList<Activity>(); // liste des activités proposées par l'entreprise
     private Set<String> prestaClientList = new HashSet<String>(); // liste des clients de l'entreprise
 
+
+    public int getSpentAmount() {
+        return spentAmount;
+    }
+
+    public void setSpentAmount(int spentAmount) {
+        this.spentAmount = spentAmount;
+    }
 
     public String getName() {
         return name;

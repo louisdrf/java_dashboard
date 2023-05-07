@@ -1,16 +1,15 @@
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class FileWriterExample {
+public class FileWriterDashboard {
     public static void write(String mystring) {
         try {
-            FileWriter writer = new FileWriter("rapport.txt", true);
-            PrintWriter out = new PrintWriter(writer);
+            java.io.FileWriter dashboard = new java.io.FileWriter("dashboard.txt", true);
+            PrintWriter out = new PrintWriter(dashboard);
             out.println(mystring);
 
             out.close();
-            writer.close();
+            dashboard.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

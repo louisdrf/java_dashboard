@@ -1,6 +1,5 @@
 import java.sql.*;
 import java.time.LocalDateTime;
-import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -24,7 +23,7 @@ entreprise presta 2 : liste des clients
 évènements proposés : liste des évènements pour l'entreprise presta2 avec montant + date + NbSeats
 
  */
-public class Main {
+public class WriteRapport {
     public static void main(String[] args) {
 
         Connection conn = null;
@@ -40,13 +39,12 @@ public class Main {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            conn =
-                    DriverManager.getConnection("jdbc:mysql://141.94.76.71/togetherdb?" +                           // CONNEXION BDD
+            conn = DriverManager.getConnection("jdbc:mysql://141.94.76.71/togetherdb?" +                           // CONNEXION BDD
                             "user=root&password=(u4bZ*=b43Fud9hB@<p>");
 
 
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-            FileWriterExample.write("Rapport généré le : " + dtf.format(LocalDateTime.now()));                  // AFFICHE HEURE DE GENERATION DU RAPPORT
+            FileWriterRapport.write("Rapport généré le : " + dtf.format(LocalDateTime.now()));                  // AFFICHE HEURE DE GENERATION DU RAPPORT
 
 
             // RECUPERER LA LISTE DES CLIENTS
@@ -63,14 +61,14 @@ public class Main {
             ///////////////////////////////////////
 
             // AFFICHER LA LISTE DES CLIENTS
-            FileWriterExample.write("\nListe des clients :\n");
+            FileWriterRapport.write("\nListe des clients :\n");
 
             for(Client client : clientList) {
                 String line = "Client " + i + " : " + client.getMail() + " / Entreprise : " + client.getCompany();
-                FileWriterExample.write(line);
+                FileWriterRapport.write(line);
                 i++;
             }
-            FileWriterExample.write("\nNombre de clients : " + clientList.size());
+            FileWriterRapport.write("\nNombre de clients : " + clientList.size());
 
 
             // RECUPERER LA LISTE DES ENTREPRISES CLIENTES
@@ -84,9 +82,6 @@ public class Main {
                 clientCompaniesList.add(company.getName());                                                             // ajoute le nom des entreprises à clientCompaniesList
             }
             ///////////////////////////////////////
-
-
-
 
 
 
@@ -116,9 +111,6 @@ public class Main {
             ///////////////////////////////////////
 
 
-
-
-
             // RECUPERER LA LISTE DES ENTREPRISES PRESTATAIRES
             Statement prestaCompany_statement = conn.createStatement();
             ResultSet companies = prestaCompany_statement.executeQuery("select company from activity");
@@ -130,10 +122,6 @@ public class Main {
                 prestaCompaniesList.add(company);
             }
             ///////////////////////////////////////
-
-
-
-
 
             // RECUPERER LA LISTE DES ACTIVITES POUR CHAQUE ENTREPRISE PRESTATAIRE
             for(PrestaCompany company : prestaCompaniesList) {
@@ -149,8 +137,6 @@ public class Main {
                 }
                 company.setPrestaActivityList(activitiesForCompany);
             }
-
-
 
 
             // RECUPERER LISTE CLIENTS POUR CHAQUE ENTREPRISE PRESTATAIRE
@@ -174,10 +160,6 @@ public class Main {
             }
 
 
-
-
-
-
             // AFFICHE LISTE ENTREPRISES PRESTATAIRES + CLIENTS POUR CHAQUE ACTIVITE + MONTANT DE LA PRESTATION
             i = 1;
             j = 0;
@@ -188,36 +170,35 @@ public class Main {
             // Boucler sur la liste des entreprises prestataires
             for (PrestaCompany prestaCompany : prestaCompaniesList) {
 
-                FileWriterExample.write("\n\nEntreprise prestataire " + i + " : " + prestaCompany.getName());
+                FileWriterRapport.write("\n\nEntreprise prestataire " + i + " : " + prestaCompany.getName());
 
                 // Afficher la liste des activités de l'entreprise prestataire
                 List<Activity> prestaActivitiesList = prestaCompany.getPrestaActivityList();
 
-                 FileWriterExample.write("Activités proposées :");
+                 FileWriterRapport.write("Activités proposées :");
 
                         for (Activity activity : prestaActivitiesList) {
-                            FileWriterExample.write("- " + activity.getName() + " (Prix : " + activity.getPricePerPerson() + ", Places : " + activity.getNumberOfSeats() + ") réservée le : " + activity.getActivityDate());
+                            FileWriterRapport.write("- " + activity.getName() + " (Prix : " + activity.getPricePerPerson() + ", Places : " + activity.getNumberOfSeats() + ") réservée le : " + activity.getActivityDate());
 
                                 // Afficher la liste des clients pour chaque activité
                                 Set<String> clientsForActivity = prestaCompany.getPrestaClientList(activity);
-                                FileWriterExample.write("Liste des clients inscrits : ");
+                                FileWriterRapport.write("Liste des clients inscrits : ");
 
                                     // itérer pour le nombre de participants à une activité
                                     for (String client : clientsForActivity) {
-                                        FileWriterExample.write("- " + client);
+                                        FileWriterRapport.write("- " + client);
                                         nbClientsForActivity++;
                                     }
-                            FileWriterExample.write("Clients inscrits à l'activité : " + nbClientsForActivity);
+                            FileWriterRapport.write("Clients inscrits à l'activité : " + nbClientsForActivity);
                             currentAmountForActivity = (nbClientsForActivity * activity.getPricePerPerson()); // calcul du montant actuel de la prestation
-                            FileWriterExample.write("Montant actuel estimé de la prestation : " + currentAmountForActivity + "€");
+                            FileWriterRapport.write("Montant actuel estimé de la prestation : " + currentAmountForActivity + "€");
                             nbClientsForActivity = 0;
                         }
                 j++;
                 i++;
             }
-            FileWriterExample.write("\nNombre d'entreprise prestataires : " + j);
-            FileWriterExample.write("\n----------------------------------------------------------------------------------\n\n\n");
-
+            FileWriterRapport.write("\nNombre d'entreprise prestataires : " + j);
+            FileWriterRapport.write("\n----------------------------------------------------------------------------------\n\n\n");
 
 
 

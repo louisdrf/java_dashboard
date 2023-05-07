@@ -3,6 +3,16 @@ public class CompanyClient {
     private int id;
     private String name;
 
+    private int spentAmount;
+
+    public int getSpentAmount() {
+        return spentAmount;
+    }
+
+    public void setSpentAmount(int spentAmount) {
+        this.spentAmount = spentAmount;
+    }
+
     public int getId() {
         return id;
     }

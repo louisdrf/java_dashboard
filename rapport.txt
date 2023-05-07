@@ -1,11 +1,13 @@
-Rapport généré le : 2023/04/13 10:29:06
+Rapport généré le : 2023/04/25 11:06:00
 
 Liste des clients :
 
 Client 1 : loanpena77@gmail.com / Entreprise : Bandit Corp
 Client 2 : louis.driffort@gmail.com / Entreprise : Microsoft
+Client 3 : kchau1@myges.fr / Entreprise : Hacking Corp
+Client 4 : loanpena77@live.fr / Entreprise : VEEPEE
 
-Nombre de clients : 2
+Nombre de clients : 4
 
 
 Entreprise prestataire 1 : Golf Corp
@@ -31,10 +33,14 @@ Liste des clients inscrits :
 - test1@test.fr
 - test3@test.fr
 - lpena@myges.fr
+- kchau1@myges.fr
+- test4@test.fr
 - louis@drf.fr
+- loanpena77@gmail.com
+- test5@test.fr
 - test2@test.fr
-Clients inscrits à l'activité : 5
-Montant actuel estimé de la prestation : 150€
+Clients inscrits à l'activité : 9
+Montant actuel estimé de la prestation : 270€
 
 
 Entreprise prestataire 4 : Boowling Corp
@@ -47,10 +53,14 @@ Montant actuel estimé de la prestation : 0€
 
 Entreprise prestataire 5 : Escape game Corp
 Activités proposées :
-- Victory Escape Game (Prix : 40, Places : 10) réservée le : null
+- Victory Escape Game (Prix : 40, Places : 10) réservée le : 2023-04-17
 Liste des clients inscrits : 
-Clients inscrits à l'activité : 0
-Montant actuel estimé de la prestation : 0€
+- loan@pena.fr
+- lolito@esgi.fr
+- ler@esgi.fr
+- lem@esgi.fr
+Clients inscrits à l'activité : 4
+Montant actuel estimé de la prestation : 160€
 
 
 Entreprise prestataire 6 : Kart Corp
@@ -68,22 +78,23 @@ Nombre d'entreprise prestataires : 6
 
 
 
-Rapport généré le : 2023/04/13 10:29:54
+Rapport généré le : 2023/05/07 15:23:10
 
 Liste des clients :
 
 Client 1 : loanpena77@gmail.com / Entreprise : Bandit Corp
-Client 2 : louis.driffort@gmail.com / Entreprise : Microsoft
 
-Nombre de clients : 2
+Nombre de clients : 1
 
 
 Entreprise prestataire 1 : Golf Corp
 Activités proposées :
-- Golf (Prix : 50, Places : 4) réservée le : null
+- Golf (Prix : 50, Places : 4) réservée le : 2023-05-10
 Liste des clients inscrits : 
-Clients inscrits à l'activité : 0
-Montant actuel estimé de la prestation : 0€
+- michael@jackson.us
+- victo@ovh.fr
+Clients inscrits à l'activité : 2
+Montant actuel estimé de la prestation : 100€
 
 
 Entreprise prestataire 2 : Branch Corp
@@ -94,45 +105,249 @@ Clients inscrits à l'activité : 0
 Montant actuel estimé de la prestation : 0€
 
 
-Entreprise prestataire 3 : Paintball Corp
+Entreprise prestataire 3 : Writting Corps
 Activités proposées :
-- Paintball (Prix : 30, Places : 12) réservée le : 2023-04-11
+- Atelier écriture (Prix : 25, Places : 10) réservée le : 2023-05-16
 Liste des clients inscrits : 
-- test1@test.fr
-- test3@test.fr
-- lpena@myges.fr
+- loanpena77@live.fr
+- kiks@chau.fr
+- lolo@lolo.fr
 - louis@drf.fr
-- test2@test.fr
-Clients inscrits à l'activité : 5
-Montant actuel estimé de la prestation : 150€
+Clients inscrits à l'activité : 4
+Montant actuel estimé de la prestation : 100€
 
 
-Entreprise prestataire 4 : Boowling Corp
+Entreprise prestataire 4 : Paintball Corp
 Activités proposées :
-- Boowling (Prix : 11, Places : 6) réservée le : null
+- Paintball (Prix : 30, Places : 12) réservée le : null
 Liste des clients inscrits : 
 Clients inscrits à l'activité : 0
 Montant actuel estimé de la prestation : 0€
 
 
-Entreprise prestataire 5 : Escape game Corp
+Entreprise prestataire 5 : Boowling Corp
 Activités proposées :
-- Victory Escape Game (Prix : 40, Places : 10) réservée le : null
+- Boowling (Prix : 11, Places : 6) réservée le : 2023-04-30
 Liste des clients inscrits : 
-Clients inscrits à l'activité : 0
-Montant actuel estimé de la prestation : 0€
+- jean-pierre@gmail.com
+- bruni@gmail.com
+- sylvain@gmail.com
+Clients inscrits à l'activité : 3
+Montant actuel estimé de la prestation : 33€
 
 
-Entreprise prestataire 6 : Kart Corp
+Entreprise prestataire 6 : Escape game Corp
 Activités proposées :
-- Karting SpeedPark (Prix : 22, Places : 10) réservée le : 2023-04-13
+- Victory Escape Game (Prix : 40, Places : 10) réservée le : 2023-04-29
 Liste des clients inscrits : 
-- tamere@gmail.com
-- tonpere@orange.fr
+- lolito@lolita.fr
+- lekiks@kiki.fr
+- louis@driff.fr
+Clients inscrits à l'activité : 3
+Montant actuel estimé de la prestation : 120€
+
+
+Entreprise prestataire 7 : Kart Corp
+Activités proposées :
+- Karting SpeedPark (Prix : 22, Places : 10) réservée le : 2023-05-11
+Liste des clients inscrits : 
+- rene@gmail.com
+- andre@gmail.com
+- jean@gmail.com
+Clients inscrits à l'activité : 3
+Montant actuel estimé de la prestation : 66€
+
+Nombre d'entreprise prestataires : 7
+
+----------------------------------------------------------------------------------
+
+
+
+Rapport généré le : 2023/05/07 18:52:54
+
+Liste des clients :
+
+Client 1 : loanpena77@gmail.com / Entreprise : Bandit Corp
+Client 2 : kchau1@myges.fr / Entreprise : Hacking Corp
+Client 3 : louis.driffort@gmail.com / Entreprise : louis.driffort@gmail.com
+
+Nombre de clients : 3
+
+
+Entreprise prestataire 1 : Golf Corp
+Activités proposées :
+- Golf (Prix : 50, Places : 4) réservée le : 2023-05-10
+Liste des clients inscrits : 
+- michael@jackson.us
+- victo@ovh.fr
 Clients inscrits à l'activité : 2
+Montant actuel estimé de la prestation : 100€
+
+
+Entreprise prestataire 2 : Branch Corp
+Activités proposées :
+- Accrobranche Park (Prix : 15, Places : 8) réservée le : null
+Liste des clients inscrits : 
+Clients inscrits à l'activité : 0
+Montant actuel estimé de la prestation : 0€
+
+
+Entreprise prestataire 3 : Writting Corps
+Activités proposées :
+- Atelier écriture (Prix : 25, Places : 10) réservée le : 2023-05-16
+Liste des clients inscrits : 
+- loanpena77@live.fr
+- kiks@chau.fr
+- louis.driffort@gmail.com
+- leperenoel@free.com
+- lolo@lolo.fr
+- kikikikz@gmail.com
+- louis@drf.fr
+- test1@test.com
+- lolilolito@orange.fr
+- leptitloulou@gmail.com
+Clients inscrits à l'activité : 10
+Montant actuel estimé de la prestation : 250€
+
+
+Entreprise prestataire 4 : Paintball Corp
+Activités proposées :
+- Paintball (Prix : 30, Places : 12) réservée le : null
+Liste des clients inscrits : 
+Clients inscrits à l'activité : 0
+Montant actuel estimé de la prestation : 0€
+
+
+Entreprise prestataire 5 : Boowling Corp
+Activités proposées :
+- Boowling (Prix : 11, Places : 6) réservée le : 2023-04-30
+Liste des clients inscrits : 
+- jean-pierre@gmail.com
+- louis.driffort@gmail.com
+- bruni@gmail.com
+- sylvain@gmail.com
+Clients inscrits à l'activité : 4
 Montant actuel estimé de la prestation : 44€
 
-Nombre d'entreprise prestataires : 6
+
+Entreprise prestataire 6 : Escape game Corp
+Activités proposées :
+- Victory Escape Game (Prix : 40, Places : 10) réservée le : 2023-04-29
+Liste des clients inscrits : 
+- leperenoel@free.com
+- lolito@lolita.fr
+- lekiks@kiki.fr
+- louis@driff.fr
+Clients inscrits à l'activité : 4
+Montant actuel estimé de la prestation : 160€
+
+
+Entreprise prestataire 7 : Kart Corp
+Activités proposées :
+- Karting SpeedPark (Prix : 22, Places : 10) réservée le : 2023-05-11
+Liste des clients inscrits : 
+- rene@gmail.com
+- andre@gmail.com
+- jean@gmail.com
+Clients inscrits à l'activité : 3
+Montant actuel estimé de la prestation : 66€
+
+Nombre d'entreprise prestataires : 7
+
+----------------------------------------------------------------------------------
+
+
+
+Rapport généré le : 2023/05/07 19:01:08
+
+Liste des clients :
+
+Client 1 : loanpena77@gmail.com / Entreprise : Bandit Corp
+Client 2 : kchau1@myges.fr / Entreprise : Hacking Corp
+Client 3 : louis.driffort@gmail.com / Entreprise : louis.driffort@gmail.com
+
+Nombre de clients : 3
+
+
+Entreprise prestataire 1 : Branch Corp
+Activités proposées :
+- Accrobranche Park (Prix : 15, Places : 8) réservée le : null
+Liste des clients inscrits : 
+Clients inscrits à l'activité : 0
+Montant actuel estimé de la prestation : 0€
+
+
+Entreprise prestataire 2 : Golf Corp
+Activités proposées :
+- Golf (Prix : 50, Places : 4) réservée le : 2023-05-10
+Liste des clients inscrits : 
+- michael@jackson.us
+- victo@ovh.fr
+Clients inscrits à l'activité : 2
+Montant actuel estimé de la prestation : 100€
+
+
+Entreprise prestataire 3 : Escape game Corp
+Activités proposées :
+- Victory Escape Game (Prix : 40, Places : 10) réservée le : 2023-04-29
+Liste des clients inscrits : 
+- leperenoel@free.com
+- lolito@lolita.fr
+- lekiks@kiki.fr
+- louis@driff.fr
+Clients inscrits à l'activité : 4
+Montant actuel estimé de la prestation : 160€
+
+
+Entreprise prestataire 4 : Kart Corp
+Activités proposées :
+- Karting SpeedPark (Prix : 22, Places : 10) réservée le : 2023-05-11
+Liste des clients inscrits : 
+- rene@gmail.com
+- andre@gmail.com
+- jean@gmail.com
+Clients inscrits à l'activité : 3
+Montant actuel estimé de la prestation : 66€
+
+
+Entreprise prestataire 5 : Writting Corps
+Activités proposées :
+- Atelier écriture (Prix : 25, Places : 10) réservée le : 2023-05-16
+Liste des clients inscrits : 
+- loanpena77@live.fr
+- kiks@chau.fr
+- louis.driffort@gmail.com
+- leperenoel@free.com
+- lolo@lolo.fr
+- kikikikz@gmail.com
+- louis@drf.fr
+- test1@test.com
+- lolilolito@orange.fr
+- leptitloulou@gmail.com
+Clients inscrits à l'activité : 10
+Montant actuel estimé de la prestation : 250€
+
+
+Entreprise prestataire 6 : Paintball Corp
+Activités proposées :
+- Paintball (Prix : 30, Places : 12) réservée le : null
+Liste des clients inscrits : 
+Clients inscrits à l'activité : 0
+Montant actuel estimé de la prestation : 0€
+
+
+Entreprise prestataire 7 : Boowling Corp
+Activités proposées :
+- Boowling (Prix : 11, Places : 6) réservée le : 2023-04-30
+Liste des clients inscrits : 
+- jean-pierre@gmail.com
+- louis.driffort@gmail.com
+- bruni@gmail.com
+- sylvain@gmail.com
+Clients inscrits à l'activité : 4
+Montant actuel estimé de la prestation : 44€
+
+Nombre d'entreprise prestataires : 7
 
 ----------------------------------------------------------------------------------
 
