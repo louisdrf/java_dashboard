@@ -23,6 +23,7 @@ public class WriteDashboard {
 
         Set<CompanyClient> clientCompaniesList = new HashSet<>();    // liste des entreprises clientes
         Set<PrestaCompany> prestaCompaniesList = new HashSet<>();   // liste des entreprises prestataires
+        Set<Bilan> bookingList = new HashSet<>();   // liste des reservations dans le temps
 
         try {
 
@@ -31,54 +32,79 @@ public class WriteDashboard {
             conn = DriverManager.getConnection("jdbc:mysql://141.94.76.71/togetherdb?" +                           // CONNEXION BDD
                     "user=root&password=(u4bZ*=b43Fud9hB@<p>");
 
-
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-            FileWriterDashboard.write("Rapport généré le : " + dtf.format(LocalDateTime.now()));                  // AFFICHE HEURE DE GENERATION DU RAPPORT
-
+            FileWriterDashboard.write("Generating time : " + dtf.format(LocalDateTime.now()));                  // AFFICHE HEURE DE GENERATION DU RAPPORT
 
             // RECUPERER LA LISTE DES ENTREPRISES CLIENTES
-
             Statement clients_statement = conn.createStatement();
-            ResultSet clients = clients_statement.executeQuery("select spentAmount from users");
+            ResultSet clients = clients_statement.executeQuery(
+                    "SELECT company, SUM(spentAmount) AS totalSpentAmount\n" +
+                    "FROM users\n" +
+                    "GROUP BY company;");
+
+
+
+            int turnoverClient = 0;
+
             while(clients.next()) {
                 CompanyClient client = new CompanyClient();
-                client.setSpentAmount(clients.getInt("spentAmount"));
+                client.setSpentAmount(clients.getInt("totalSpentAmount"));
                 client.setName(clients.getString("company"));
-
+                turnoverClient+=client.getSpentAmount();
                 clientCompaniesList.add(client);
             }
-
-            FileWriterDashboard.write("liste des clients\n\n");
-
-
+            FileWriterDashboard.write("\nClients\n");
             for(CompanyClient company : clientCompaniesList) {
-
-                FileWriterDashboard.write("\nmontant depensé par : " + company.getName() + " -> " + company.getSpentAmount());
+                FileWriterDashboard.write("client:" + company.getName() + "/" + company.getSpentAmount());
             }
 
-            ///////////////////////////////////////
-
-
-            // RECUPERER LA LISTE DES ENTREPRISES PRESTATAIRES ET LEUR CA
+            // RECUPERER LA LISTE DES ENTREPRISES PRESTATAIRES ET LEUR REVENU
 
             Statement prestaCompany_statement = conn.createStatement();
-            ResultSet companies = prestaCompany_statement.executeQuery("select company,income from activity");
+            ResultSet companies = prestaCompany_statement.executeQuery("select distinct company,income from activity");
             while(companies.next()) {
 
                 PrestaCompany company = new PrestaCompany();
                 company.setName(companies.getString("company"));
                 company.setSpentAmount(companies.getInt("income"));
-
                 prestaCompaniesList.add(company);
             }
-
-            FileWriterDashboard.write("liste des presta\n\n");
-
+            FileWriterDashboard.write("\nPresta\n");
             for(PrestaCompany company : prestaCompaniesList) {
+                FileWriterDashboard.write("presta:" + company.getName() + "/" + company.getSpentAmount());
+            }
+            FileWriterDashboard.write("\nCA:" + turnoverClient);
 
-                FileWriterDashboard.write("\nmontant depensé par : " + company.getName() + " -> " + company.getSpentAmount());
+ /*
+ RECUPERATION DE L'EVOLUTION DE LA DEMANDE SUR LE SITE
+ */
+
+
+            // RECUPERER LA DEMANDE SUR LE SITE
+
+            Statement nbbooking_statement = conn.createStatement();
+            ResultSet bookings = nbbooking_statement.executeQuery
+                    (
+                            "SELECT booking.idActivity, booking.dateBooking, COUNT(*) AS total_bookings, activity.name AS activity_name\n" +
+                    "FROM booking\n" +
+                    "INNER JOIN activity ON booking.idActivity = activity.idActivity\n" +
+                    "GROUP BY booking.idActivity, booking.dateBooking; "
+                    );
+
+            while(bookings.next()) {
+
+                Bilan bilan = new Bilan();
+                bilan.setNbbooking(bookings.getInt("total_bookings"));
+                bilan.setDate(bookings.getString("dateBooking"));
+                bookingList.add(bilan);
+
+                FileWriterDashboard.write("date:" + bilan.getDate() + " nbbooking:" + bilan.getNbbooking());
             }
 
+
+
+
+            FileWriterDashboard.write("\n-------------------------------------------------------------------------------------------------------\n\n\n");
 
 
         } catch (SQLException ex) {

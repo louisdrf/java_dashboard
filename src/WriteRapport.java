@@ -42,7 +42,6 @@ public class WriteRapport {
             conn = DriverManager.getConnection("jdbc:mysql://141.94.76.71/togetherdb?" +                           // CONNEXION BDD
                             "user=root&password=(u4bZ*=b43Fud9hB@<p>");
 
-
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
             FileWriterRapport.write("Rapport généré le : " + dtf.format(LocalDateTime.now()));                  // AFFICHE HEURE DE GENERATION DU RAPPORT
 
