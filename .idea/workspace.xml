@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e526c24-f8e4-44d0-8eb8-bd9329f790c4" name="Changes" comment="update linechart">
-      <change afterPath="$PROJECT_DIR$/src/PieChartPresta.java" afterDir="false" />
+    <list default="true" id="8e526c24-f8e4-44d0-8eb8-bd9329f790c4" name="Changes" comment="added PieChart for 5 biggest supplier companies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookingEvolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookingEvolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileReaderDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileReaderDashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HistogramSpending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HistogramSpending.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Month.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapport.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rapport.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bilan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Bilan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookingEvolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/graphics/BookingEvolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompanyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CompanyClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DiagramCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DiagramCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileReaderDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/data/FileReaderDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileWriterDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/data/FileWriterDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileWriterRapport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/data/FileWriterRapport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HistogramSpending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/graphics/HistogramSpending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PieChartPresta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/graphics/PieChartPresta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PrestaCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/PrestaCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WriteDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/data/WriteDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WriteRapport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/data/WriteRapport.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +118,7 @@
       <workItem from="1683464682441" duration="6362000" />
       <workItem from="1683478495325" duration="22850000" />
       <workItem from="1683557967597" duration="6171000" />
-      <workItem from="1683565531614" duration="1957000" />
+      <workItem from="1683565531614" duration="2655000" />
     </task>
     <task id="LOCAL-00001" summary="commit all">
       <created>1681375168495</created>
@@ -145,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683562091769</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added PieChart for 5 biggest supplier companies">
+      <created>1683567560527</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683567560527</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +174,7 @@
     <MESSAGE value="add FileWriter for dashboard and WriteDashboard file" />
     <MESSAGE value="add Dashboard file generating and Histogram charts about clients" />
     <MESSAGE value="add Dashboard file generating and Histogram charts about clients + linechart for booking evolution on the current year" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Dashboard file generating and Histogram charts about clients + linechart for booking evolution on the current year" />
+    <MESSAGE value="added PieChart for 5 biggest supplier companies" />
+    <option name="LAST_COMMIT_MESSAGE" value="added PieChart for 5 biggest supplier companies" />
   </component>
 </project>

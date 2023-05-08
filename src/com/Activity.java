@@ -1,6 +1,8 @@
+package com;
+
 import java.util.Date;
 
-class Activity {
+public class Activity {
     private int id;
     private String name;
     private int pricePerPerson;

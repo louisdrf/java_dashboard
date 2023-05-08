@@ -1,3 +1,7 @@
+package com.graphics;
+import com.data.*;
+import com.*;
+
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;
 import org.jfree.chart.JFreeChart;

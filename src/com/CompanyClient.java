@@ -1,3 +1,5 @@
+package com;
+
 public class CompanyClient {
 
     private int id;

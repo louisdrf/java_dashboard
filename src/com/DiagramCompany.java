@@ -1,3 +1,5 @@
+package com;
+
 public class DiagramCompany {
 
     private String name;

@@ -1,4 +1,6 @@
-class Client {
+package com;
+
+public class Client {
 
     private String company;
 

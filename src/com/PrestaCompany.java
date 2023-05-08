@@ -1,9 +1,13 @@
+package com;
+
+import com.Activity;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-class PrestaCompany {
+public class PrestaCompany {
 
     private String name;
     private int montantPresta;
