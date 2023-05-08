@@ -3,11 +3,9 @@ import org.jfree.chart.ChartFrame;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
-import org.jfree.data.xy.XYDataset;
-import org.jfree.data.xy.XYSeries;
-import org.jfree.data.xy.XYSeriesCollection;
 
-import java.time.LocalDate;
+
+import java.awt.*;
 import java.util.List;
 
 public class BookingEvolution {
@@ -17,7 +15,7 @@ public class BookingEvolution {
             // on récupère les données du fichier texte pour le dataset
 
         FileReaderDashboard dashboard = new FileReaderDashboard();
-        List<Bilan> bilanList = dashboard.readPrestasFromFile("dashboard.txt");
+        List<Bilan> bilanList = dashboard.readBookingsFromFile("dashboard.txt");
 
         double[] monthBookingCount = new double[12];
 
@@ -44,6 +42,16 @@ public class BookingEvolution {
                 true,
                 false
         );
+
+        chart.getCategoryPlot().getRenderer().setSeriesPaint(0, Color.BLUE); // couleur et epaisseur de la ligne
+        chart.getCategoryPlot().getRenderer().setSeriesStroke(0, new BasicStroke(3.0f));
+
+
+        Font font = new Font("Arial Rounded MT Bold", Font.PLAIN, 18);
+        chart.getTitle().setFont(font);
+        chart.getCategoryPlot().getDomainAxis().setLabelFont(font);
+        chart.getCategoryPlot().getRangeAxis().setLabelFont(font);
+
 
         ChartFrame frame = new ChartFrame("Evolution de la demande", chart);
         frame.pack();

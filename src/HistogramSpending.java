@@ -34,6 +34,10 @@ public class HistogramSpending extends ApplicationFrame {
 
         JFreeChart chart = ChartFactory.createBarChart("Client Spending", "Client", "Spending", dataset, PlotOrientation.VERTICAL, false, false, false);
         chart.setBackgroundPaint(Color.WHITE);
+        Font font = new Font("Arial Rounded MT Bold", Font.PLAIN, 18);
+        chart.getTitle().setFont(font);
+        chart.getCategoryPlot().getDomainAxis().setLabelFont(font);
+        chart.getCategoryPlot().getRangeAxis().setLabelFont(font);
 
         CategoryPlot plot = chart.getCategoryPlot();
         plot.setRangeGridlinePaint(Color.blue);

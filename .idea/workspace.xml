@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e526c24-f8e4-44d0-8eb8-bd9329f790c4" name="Changes" comment="add Dashboard file generating and Histogram charts about clients">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfreechart_1_0_19_demo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HistogramSpending.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Month.java" afterDir="false" />
+    <list default="true" id="8e526c24-f8e4-44d0-8eb8-bd9329f790c4" name="Changes" comment="update linechart">
+      <change afterPath="$PROJECT_DIR$/src/PieChartPresta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dahsboard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dahsboard.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BookingEvolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookingEvolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WriteDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileReaderDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileReaderDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HistogramSpending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HistogramSpending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Month.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +107,8 @@
       <workItem from="1683414990645" duration="1621000" />
       <workItem from="1683464682441" duration="6362000" />
       <workItem from="1683478495325" duration="22850000" />
-      <workItem from="1683557967597" duration="4038000" />
+      <workItem from="1683557967597" duration="6171000" />
+      <workItem from="1683565531614" duration="1957000" />
     </task>
     <task id="LOCAL-00001" summary="commit all">
       <created>1681375168495</created>
@@ -139,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683503414202</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add Dashboard file generating and Histogram charts about clients + linechart for booking evolution on the current year">
+      <created>1683562091769</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683562091769</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +156,7 @@
     <MESSAGE value="commit to add all files" />
     <MESSAGE value="add FileWriter for dashboard and WriteDashboard file" />
     <MESSAGE value="add Dashboard file generating and Histogram charts about clients" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Dashboard file generating and Histogram charts about clients" />
+    <MESSAGE value="add Dashboard file generating and Histogram charts about clients + linechart for booking evolution on the current year" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Dashboard file generating and Histogram charts about clients + linechart for booking evolution on the current year" />
   </component>
 </project>

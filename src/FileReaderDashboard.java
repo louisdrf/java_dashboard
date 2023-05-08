@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class FileReaderDashboard {
     private List<Bilan> bilanList;
     private List<DiagramCompany> clientList;
+    private List<DiagramCompany> prestaList;
     private int turnover;
 
     public List<DiagramCompany> readClientsFromFile(String fileName) {
@@ -39,7 +40,7 @@ public class FileReaderDashboard {
         return clientList;
     }
 
-    public List<Bilan> readPrestasFromFile(String fileName) {
+    public List<Bilan> readBookingsFromFile(String fileName) {
         File file = new File(fileName);
         bilanList = new ArrayList<>();
 
@@ -67,6 +68,36 @@ public class FileReaderDashboard {
         }
 
         return bilanList;
+    }
+
+    public List<DiagramCompany> readPrestaFromFile(String fileName) {
+        File file = new File(fileName);
+        prestaList = new ArrayList<>();
+
+        try {
+            Scanner scanner = new Scanner(file);
+
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+
+                if (line.startsWith("presta:")) {
+                    String[] parts = line.split(":");
+                    String prestaName = parts[1].split("/")[0].trim();
+                    int prestaSpending = Integer.parseInt(parts[1].split("/")[1].trim());
+
+                    DiagramCompany presta = new DiagramCompany();
+                    presta.setName(prestaName);
+                    presta.setSpending(prestaSpending);
+                    prestaList.add(presta);
+                }
+            }
+
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found: " + file.getAbsolutePath());
+        }
+
+        return prestaList;
     }
 
     public int getTurnover(String fileName) {
