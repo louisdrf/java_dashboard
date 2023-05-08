@@ -98,7 +98,7 @@ public class WriteDashboard {
                 bilan.setDate(bookings.getString("dateBooking"));
                 bookingList.add(bilan);
 
-                FileWriterDashboard.write("date:" + bilan.getDate() + " nbbooking:" + bilan.getNbbooking());
+                FileWriterDashboard.write("date:" + bilan.getDate() + "/" + bilan.getNbbooking());
             }
 
 

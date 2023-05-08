@@ -17,5 +17,7 @@
     <orderEntry type="library" name="orsoncharts-1.4-eval-nofx" level="project" />
     <orderEntry type="library" name="servlet" level="project" />
     <orderEntry type="library" name="swtgraphics2d" level="project" />
+    <orderEntry type="library" name="jfreechart-1.0.19-demo" level="project" />
+    <orderEntry type="library" name="junit-4.11" level="project" />
   </component>
 </module>
